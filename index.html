@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Docs - Workspace Dashboard</title>
+    <link rel="icon" href="https://gstatic.com" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- DECOY DISGUISE VIEW -->
+    <div id="decoy-screen" class="screen">
+        <header>
+            <h1 onclick="toggleSecretPortal()">📄 Google Workspace Docs</h1>
+            <p>Shared classroom assets, research portfolios, and group essay drafts.</p>
+        </header>
+        <main class="decoy-content">
+            <div class="card">
+                <h3>History Essay Draft v2</h3>
+                <p>Modified 2 hours ago by Group A.</p>
+            </div>
+            <div class="card">
+                <h3>Science Lab Sheet</h3>
+                <p>Modified yesterday by Teacher.</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- HIDDEN UNBLOCKED ARCADE -->
+    <div id="secret-portal" class="screen hidden">
+        <header class="header-container">
+            <h1>🎮 Arcade Vault</h1>
+            <button class="panic-btn" onclick="panicMode()">PANIC (Esc)</button>
+        </header>
+        
+        <!-- TARGET FOR LUMINSDK AUTO-GENERATED LIBRARY -->
+        <main id="games-grid"></main>
+    </div>
+
+    <!-- LUMINSDK SOURCE LINK -->
+    <script src="https://cdn.jsdelivr.net/gh/luminsdk/script@latest/lumin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
